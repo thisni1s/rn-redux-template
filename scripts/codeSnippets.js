@@ -1,8 +1,8 @@
-export const objectReducerSnippet = `import { ACTION_NAME } from '../actions/actionTypes';
+export const objectReducerSnippet = `import { ACTION_TYPE } from '../actions/actionTypes';
   
 const REDUCER_NAME = (state = {}, action) => {
   switch (action.type) {
-  case ACTION_NAME:
+  case ACTION_TYPE:
     return action.payload;
   default:
     return state;
@@ -11,11 +11,11 @@ const REDUCER_NAME = (state = {}, action) => {
 export default REDUCER_NAME;  
 `;
 
-export const arrayReducerSnippet = `import { ACTION_NAME } from '../actions/actionTypes';
+export const arrayReducerSnippet = `import { ACTION_TYPE } from '../actions/actionTypes';
   
 const REDUCER_NAME = (state = [], action) => {
   switch (action.type) {
-  case ACTION_NAME:
+  case ACTION_TYPE:
     return action.payload;
   default:
     return state;
@@ -24,8 +24,11 @@ const REDUCER_NAME = (state = [], action) => {
 export default REDUCER_NAME;  
 `;
 
-export const actionSnippet = `export const ACTION_NAME = obj => ({
+export const actionSnippet = `
+import { ACTION_TYPE } from './actionTypes';
+export const ACTION_NAME = obj => ({
 	type: ACTION_TYPE,
 	obj,
 });
+
 `;
