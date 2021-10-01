@@ -1,4 +1,4 @@
-import { createThunk, createReducer } from "./creator";
+const { createThunk, createReducer } = require('./creator.js');
 
 const type = process.argv[2];
 const datatype = process.argv[3];
