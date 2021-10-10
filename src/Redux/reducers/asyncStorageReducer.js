@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-//import shoppingCacheReducer from './shoppingCacheReducer';
+//END_IMPORTS
 
 let mainReducer = combineReducers({
   //reducer names comma seperated
