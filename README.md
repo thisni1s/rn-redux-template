@@ -68,3 +68,7 @@ In your component you can then get the current state like this: `props.login` an
 ## Where to create the rest of the Code?
 
 You can write your app anywhere you want, by defualt the main View is in `src/Views/mainView.js`
+
+## Inspiration
+
+This project is inspired by [this](https://github.com/hamzawaleed0102/react-native-automated-boilerplate) react-native template by [Hamza Waleed](https://github.com/hamzawaleed0102). But i didn't like the redux implementation so this project was born.
