@@ -24,7 +24,7 @@ const authPersistConfig = {
 
 let persistedReducer = combineReducers({
   main: persistReducer(mainPersistConfig, mainReducer),
-  auth: persistReducer(authPersistConfig, sensitiveReducer),
+  sens: persistReducer(authPersistConfig, sensitiveReducer),
 });
 
 export default persistedReducer;
